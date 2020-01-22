@@ -8,22 +8,66 @@
           border: 5px solid gold;
           margin: 0;
     }
+    p {
+        text-decoration: overline;
+    }
+    #background-color {
+        background-color:powderblue;
+        width: fit-content;
+    }
+    li.green {
+        color: forestgreen;
+    }
+    li.orange {
+        color: orange;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        letter-spacing: 20px;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
     </style>
 <title>A basic page</title>
 </head>
 <body>
-
+<ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+ </ul>
 <h1>Dylan Pemberton</h1>
 <hr>
 <div>about: My name is Dylan Pemberton and i like chess and Star Wars and chocolate.
 Projects: I have completed many projects in cs including at at least 3 in cs235</div>
 <a href="https://www.chess.com">Visit Chess.com</a>
 <ol>
-<li>railroad</li>
-<li>quicksort</li>
-<li>pokemon</li>
-<li>Star Wars</li>
-<li>GitHub</li>
+<li class="green" id= "background-color">railroad</li>
+<li class="orange" id= "background-color"> quicksort</liclass="orange">
+<li class="green">pokemon</liclass="green">
+<li class="orange">Star Wars</li>
+<li class="green">GitHub</liclass="green">
 </ol>
 <h2>Experience</h2>
 <p>I have worked in many fields from custodial to fast food to computer science
