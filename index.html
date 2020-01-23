@@ -3,15 +3,32 @@
 <head>
 <style>
     div {
-        float:right;
+        float:none;
           width: 320px;
           padding: 10px;
           border: 5px solid gold;
           margin: 0;
     }
+    .flex-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        background-color: DodgerBlue;
+        width: 100%;
+    }
+
+    .flex-container > div {
+        flex-wrap: wrap;
+        flex-direction: row;
+     background-color: #f1f1f1;
+     margin: 10px;
+     padding: 20px;
+     font-size: 30px;
+    }
     p{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 320px;
           padding: 10px;
           border: 5px solid gold;
@@ -25,7 +42,7 @@
         width: fit-content;
     }
     ol {
-        float:right;
+        float:none;
     }
     li.green {
         float: none;
@@ -48,7 +65,9 @@
   width: 200px;
   background-color: #f1f1f1;
 }
-
+h2 a:hover {
+    background-color: #555;
+}
 li a {
   display: block;
   color: #000;
@@ -62,7 +81,7 @@ li a:hover {
   color: white;
 }
     </style>
-<title>A basic page</title>
+<title>Dylan's Website</title>
 </head>
 <body>
 <ul>
@@ -83,10 +102,10 @@ Projects: I have completed many projects in cs including at at least 3 in cs235<
 <li class="orange">Star Wars</li>
 <li class="green">GitHub</liclass="green">
 </ol>
-<h2>Experience</h2>
+<center>
+<h2><a>Experience</a></h2>
 <p>I have worked in many fields from custodial to fast food to computer science
-
-Contact: dylanp.1997@gmail.com</p>
+    Contact: dylanp.1997@gmail.com</p>
 <p>There wasn't a bird in the sky, but that was not what caught her attention. 
     It was the clouds. The deep green that isn't the color of clouds, but came with these. 
     She knew what was coming and she hoped she was prepared.</p>
@@ -95,3 +114,19 @@ Contact: dylanp.1997@gmail.com</p>
 <p>What was beyond the bend in the stream was unknown. Both were curious, but only 
     one was brave enough to want to explore. That was the problem. There was always 
     one that let fear rule her life.</p>
+
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div> 
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>   
+    <div>7</div>
+    <div>8</div>
+    <div>9</div> 
+    <div>10</div>
+    <div>11</div>
+    <div>12</div> 
+  </div>
+</center>
